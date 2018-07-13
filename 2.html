@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+         <title>Si calculator</title>
+    <link rel="Stylesheet" href="css/main.css">
+        
+    </head>
+    <script type="text/jscript">
+         function calc(){
+         amount=document.getElementById("amount").value;
+         rate=document.getElementById("rate").value;
+         time=document.getElementById("time").value;
+         si=(amount*rate*time)/100;
+         
+         document.getElementById("res").innerHTML="<h3> SI Amount is:"+si+"</h3>";
+         
+         }
+    
+    
+    </script>
+    <body>
+        <a href="index.html">Home</a>
+        <h3>SI Calculator</h3>
+        <div id="si">
+        
+           
+            <form>
+                  <fieldset>
+                       <legend>SI Calculator</legend>
+                      <p>
+                          <lable>Amount:</lable>
+                          <input type="text" id="amount"/>
+                      
+                      
+                      </p>
+                
+                   <p>
+                          <lable>Time:</lable>
+                          <input type="text" id="time"/>
+                      
+                      
+                      </p>
+                   <p>
+                          <lable>Rate:</lable>
+                          <input type="text" id="rate"/>
+                      
+                      
+                      </p>
+                           <p>
+                          <lable>&nbsp;</lable>
+                          <input type="button" value="caluculate" onclick="calc()"/>
+                                  
+                      
+                      </p>
+                            
+                
+                </fieldset>
+            
+            
+            
+            </form>
+                       
+            <p id="res"></p>
+
+        
+        
+        </div>
+      
+    </body>
+
+</html>
