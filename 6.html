@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html>
+<head>
+    <title>Login form</title>
+    <style>
+        .error{
+            color:red;
+            font-size:20px;
+            margin-left:70px;
+        }
+    
+    </style>
+    <script src="js/login.js" type="text/javascript">
+    
+    </script>
+        </head>
+        <body>
+            <h3>Login form</h3>
+            <form onsubmit="return validate();">
+            <fieldset>
+            <legend>login form</legend>
+        
+            <p>
+                <label>Username</label>
+                <input type="text" id="uname" class="uname">
+                <span class="error" id="erroruname"></span>
+            
+            </p>
+        
+                <p>
+                <label>Password</label>
+                <input type="password" id="pwd" class="pwd">
+                <span class="error" id="errorpwd"></span>
+            
+            </p>
+        <p>
+        <label>&nbsp;</label>
+            <input type="submit" value="login">
+        
+        </p>
+            </fieldset>
+            </form>
+        </body>  
+</html>
+        
+      
